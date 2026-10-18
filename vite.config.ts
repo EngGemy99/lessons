@@ -12,13 +12,13 @@ export default defineConfig({
     tailwindcss(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.svg', 'icons.svg'],
+      includeAssets: ['favicon.ico', 'apple-touch-icon-180x180.png'],
       devOptions: {
         enabled: true,
       },
       manifest: {
-        name: 'متابعة دفع الدروس',
-        short_name: 'الدروس',
+        name: 'دفتر المدرس',
+        short_name: 'دفتر المدرس',
         description: 'تنظيم مجموعات الدروس ومتابعة الدفع الشهري',
         lang: 'ar',
         dir: 'rtl',
@@ -28,17 +28,22 @@ export default defineConfig({
         start_url: '/',
         icons: [
           {
-            src: 'pwa-192.png',
+            src: 'pwa-64x64.png',
+            sizes: '64x64',
+            type: 'image/png',
+          },
+          {
+            src: 'pwa-192x192.png',
             sizes: '192x192',
             type: 'image/png',
           },
           {
-            src: 'pwa-512.png',
+            src: 'pwa-512x512.png',
             sizes: '512x512',
             type: 'image/png',
           },
           {
-            src: 'pwa-512.png',
+            src: 'maskable-icon-512x512.png',
             sizes: '512x512',
             type: 'image/png',
             purpose: 'maskable',

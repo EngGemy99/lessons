@@ -16,7 +16,7 @@ export function GroupsPage() {
 
   return (
     <AppShell
-      title="متابعة دفع الدروس"
+      title="دفتر المدرس"
       subtitle={formatMonthLabel(month)}
       action={
         <Link
